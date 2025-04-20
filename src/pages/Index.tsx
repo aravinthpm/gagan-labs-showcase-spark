@@ -1,12 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from "react";
+import Header from "@/components/layout/Header";
+import Hero from "@/components/sections/Hero";
+import VisionMission from "@/components/sections/VisionMission";
+import About from "@/components/sections/About";
+import Team from "@/components/sections/Team";
+import Career from "@/components/sections/Career";
+import Footer from "@/components/layout/Footer";
+import ParticlesBackground from "@/components/layout/ParticlesBackground";
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "Gagan Labs - India's Startup Accelerator";
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="flex flex-col min-h-screen bg-white overflow-hidden">
+      <Header />
+      <main>
+        <Hero />
+        <VisionMission />
+        <About />
+        <Team />
+        <Career />
+      </main>
+      <Footer />
+      <ParticlesBackground />
     </div>
   );
 };
