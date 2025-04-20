@@ -5,6 +5,8 @@ import Hero from "@/components/sections/Hero";
 import VisionMission from "@/components/sections/VisionMission";
 import About from "@/components/sections/About";
 import Team from "@/components/sections/Team";
+import Projects from "@/components/sections/Projects";
+import Contact from "@/components/sections/Contact";
 import Career from "@/components/sections/Career";
 import Footer from "@/components/layout/Footer";
 import ParticlesBackground from "@/components/layout/ParticlesBackground";
@@ -21,8 +23,10 @@ const Index = () => {
         <Hero />
         <VisionMission />
         <About />
+        <Projects />
         <Team />
         <Career />
+        <Contact />
       </main>
       <Footer />
       <ParticlesBackground />
